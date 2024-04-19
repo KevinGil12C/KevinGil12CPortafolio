@@ -1,0 +1,23 @@
+@import url("style.css");
+
+section.skills{
+    text-align: center;
+}
+.skills__line{
+    padding: 0% 10% 0% 10%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.social .bx{
+    padding-top: 12px;
+    font-size: 1.8rem;
+    color: var(--color-bg);
+}
+
+.social .bx:hover{
+    color: var(--color-second);
+    transition: 0.3s all linear;
+}
+

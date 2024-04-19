@@ -1,0 +1,36 @@
+@import url("style.css");
+
+section.title{
+    padding: 60px 5% 0% 5%;
+    min-height: 150px;
+    background: var(--color-bg);
+    justify-content: center;
+    align-items: center;
+}
+
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 25px;
+    align-items: center;
+}
+.title-profile{
+    width: calc(100% / 6);
+    height: auto;
+}
+
+.title__network{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px
+}
+.title__network .bx{
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+.title__network .bx:hover{
+    color: var(--color-second);
+    transition: 0.3s all linear;
+}

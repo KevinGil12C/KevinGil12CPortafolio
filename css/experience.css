@@ -1,0 +1,108 @@
+@import url("style.css");
+
+/* experience filter*/
+.experience__filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1.5rem;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem; /* Agrega un espacio entre el encabezado y el contenido */
+    padding-bottom: 20px;
+}
+.experience__filter__item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.active__filter{
+    background-color: var(--color-second);
+    color: var(--color-bg);
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+/* Experience box*/
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Esto centra los elementos horizontalmente */
+}
+
+.experience__boxes {
+    width: 100%; /* Ajusta el ancho al contenedor */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 50px; /* Espacio entre los cuadros de experiencia */
+}
+
+.experience__box {
+    background: var(--bg-color);
+    box-shadow: 0 4px 14px hsl(355deg 25% 15%);
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 300px; /* Ancho fijo */
+    /* Ajusta los estilos según tus necesidades */
+}
+
+.experience__section__title {
+    font-size: 1.5rem; /* Tamaño del título */
+}
+
+
+.experience__box__img{
+    width: 300px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+
+/* experience category*/
+.category{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--color-second);
+}
+
+.experience__title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-text);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.experience__text{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Experience buttons*/
+.experience__description{
+    text-align: center;
+}
+.experience__button__repo{
+    color: var(--color-button);
+    background: var(--color-bg);
+    border: 2px solid var(--color-button);
+}
+
+.experience__button__demo{
+    color: var(--color-bg);
+    background: var(--color-button);
+    border: none;
+}
+

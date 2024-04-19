@@ -1,0 +1,30 @@
+@import url("skills.css");
+footer {
+    bottom: 0;
+    width: 100% - 20px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 2rem; /* Agrega un espacio entre el contenido y el footer */
+    background-image: url("../img/bg.jpg");
+}
+
+footer img{
+	width: 100px;
+}
+
+.skills__box .bx{
+    font-size: 1.9rem;
+    color: var(--color-text);
+}
+
+.skills__box .bx:hover{
+    color: var(--color-second);
+    transition: 0.3s all linear;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+	margin: 0;
+	padding: 0;
+}

@@ -1,0 +1,71 @@
+@import url("style.css");
+
+section.formcontato {
+    text-align: center;
+    background-color: #EAF2FD;
+}
+
+.formcontato__contacto {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    padding: 3rem 5% 3rem 5%;
+    justify-content: space-around;
+}
+
+.formcontato_izquierda img{
+    object-fit: contain;
+    width: 500px;
+    align-items: center;
+}
+.formcontato__form {
+    text-align: left;
+    /* Alineamos el texto a la izquierda */
+}
+
+.formcontato__form .formcontato__form-wrapper {
+    display: flex;
+    height: 50px;
+    width: 80%;
+    position: relative;
+
+}
+
+.formcontato__form input:focus~label,
+.formcontato__form input:valid~label {
+    transform: translateY(-20px);
+    font-size: 15px;
+}
+
+.formcontato__form-wrapper {
+    position: relative;
+    margin-bottom: 2.5rem;
+    /* Espacio entre los inputs */
+}
+
+.formcontato__form .formcontato__form-wrapper input {
+    height: 4rem;
+    width: 100%;
+    border: none;
+    font-size: 17px;
+    border-bottom: 2px solid #000;
+}
+
+.formcontato__form .formcontato__form-wrapper label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+
+}
+
+/* button experience*/
+.formcontato__button{
+    color: var(--color-bg);
+    background: var(--color-button);
+    border: none;
+    height: 2.5rem;
+    border-radius: 4px;
+}

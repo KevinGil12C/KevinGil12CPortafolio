@@ -1,0 +1,8 @@
+@import url("style.css");
+
+section.about {
+    margin-top: 20px;
+    padding: 40px 30% 40px 5%;
+    text-align: justify;
+    background-color: var(--color-fondo);
+}

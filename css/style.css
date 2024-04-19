@@ -1,0 +1,279 @@
+:root {
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+    --color-fondo: #EAF2FD;
+    --color-hover: #0b9b9b;
+    --color-text: #172317;
+    --color-bg: #fff;
+    --color-second: #fd8f44;
+    --color-button: #2A7AE4;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+button {
+    width: auto;
+    height: 2.5rem;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1068px;
+    margin: auto;
+    width: 100%;
+    padding: 0 2%; /* Agrega un pequeño relleno a los lados para evitar que el contenido toque los bordes */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total del contenedor */
+}
+
+
+section:not(.menu) {
+    padding-top: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 2%; /* Reducir el relleno en dispositivos más pequeños */
+    }
+
+    /* section menu*/
+    .menu__list__item:nth-child(-n+5) {
+        display: none;
+    }
+
+    /* section about*/
+    section.about {
+        width: 98%;
+        /* Ajustamos el ancho del contenedor */
+        max-width: 100%;
+        /* Establecemos el ancho máximo para evitar que se desborde */
+        margin: 0 auto;
+        padding: 1% 1%;
+        padding-bottom: 10px;
+    }
+
+    .about__container {
+        margin: 0 auto;
+        /* Centramos el contenedor */
+        padding: 40px 2%;
+    }
+
+    /* section title*/
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .title__div img {
+        width: 20%;
+    }
+
+    /* section skills */
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .skills__box {
+        flex-basis: calc(25% - 20px);
+        /* Ajusta el ancho de cada habilidad */
+        margin-bottom: 20px;
+        /* Espacio entre las habilidades */
+    }
+
+    /* section hobbies */
+    .hobbies__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .hobbies__box {
+        flex-basis: calc(25% - 20px);
+        /* Ajusta el ancho de cada habilidad */
+        margin-bottom: 20px;
+        /* Espacio entre las habilidades */
+    }
+
+    /*Formación Académica*/
+    .academic__courses {
+        top: 0%;
+        padding: 0%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        justify-content: left;
+        gap: 20px;
+    }
+
+    .academic__courses__list img {
+        height: auto;
+        width: calc((100% /2));
+    }
+
+    /* section experience*/
+
+    .experience__boxes {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Cambia el tamaño mínimo y máximo de las columnas */
+        gap: 20px; /* Reduce el espacio entre los cuadros */
+        padding-bottom: 30px; /* Reduce el espacio inferior */
+    }
+
+    .experience__box {
+        width: 100%; /* Ancho del 100% para ocupar el ancho completo del contenedor */
+        max-width: 250px; /* Establece un ancho máximo */
+    }
+    .experience__box img {
+        height: 200;
+        width: 250px;
+    }
+
+    /* COntact*/
+    .formcontato__img {
+        display: none;
+    }
+
+    .formcontato__form .formcontato__form-wrapper {
+        width: 100%;
+        /* Cambiamos el ancho al 100% */
+    }
+
+    .formcontato__form {
+        text-align: left;
+        /* Alineamos el texto a la izquierda */
+    }
+
+    footer{
+        max-width: 768px;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-width: 395px) {
+    /*Menu*/
+    .menu__title{
+        text-align: center
+    }
+    .menu__list__item:nth-child(6) {
+        display: none;
+    }
+    /*Titulo*/
+    .title__div{
+        display: flex;
+        flex-direction: column;
+    }
+    .title__bio{
+        font-size: 22px;
+    }
+    .title__subsection{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    /*Sección sobre mi*/
+    section.about {
+        margin: 0 auto; /* Reducimos el margen superior */
+        padding: 0px; /* Reducimos el relleno */
+    }
+    /* section skills */
+    .skills__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .skills__box {
+        flex-basis: calc(25% - 20px);
+        /* Ajusta el ancho de cada habilidad */
+        margin-bottom: 20px;
+        /* Espacio entre las habilidades */
+    }
+
+    /* section hobbies */
+    .hobbies__line {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10%;
+    }
+
+    .hobbies__box {
+        flex-basis: calc(25% - 20px);
+        /* Ajusta el ancho de cada habilidad */
+        margin-bottom: 20px;
+        /* Espacio entre las habilidades */
+    }
+
+    /*Formación Académica*/
+    .academic__courses{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .academic__courses__list img {
+        width: auto;
+        height: 80px;
+    }
+    .academic__courses__item__title,
+    .academic__courses__item__subtitle{
+        text-align: left;
+    }
+
+    /* section experience*/
+    .experience__filter{
+        padding-bottom: 20px;
+    }
+    .experience__boxes {
+        grid-template-columns: 1fr; /* Establece una sola columna en dispositivos pequeños */
+        gap: 20px; /* Reduce el espacio entre los cuadros */
+        padding-bottom: 30px; /* Reduce el espacio inferior */
+    }
+
+    .experience__box {
+        width: calc(100% - 60px); /* Ancho del 100% menos el espacio de los márgenes (20px a cada lado) */
+        max-width: none; /* Elimina el ancho máximo establecido anteriormente */
+        margin-left: 20px; /* Espacio en el lado izquierdo */
+        margin-right: 20px; /* Espacio en el lado derecho */
+    }
+
+    .experience__box img {
+        height: auto; /* Ajusta la altura de la imagen automáticamente */
+        width: 100%; /* Ancho del 100% para que la imagen ocupe todo el espacio disponible */
+    }
+    
+    /*Contacto*/
+    .formcontato__contacto {
+        padding: 0%;
+    }
+    .formcontato__form {
+        text-align: left;
+        padding: 10px 20px;
+    }
+    /*Footer*/
+    footer {
+        bottom: 0;
+        width: 100% - 40px;
+        padding: 20px;
+        text-align: center;
+        margin-top: 2rem; /* Agrega un espacio entre el contenido y el footer */
+        background-image: url("../img/bg.jpg");
+    }
+}

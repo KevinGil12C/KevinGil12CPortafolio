@@ -1,0 +1,38 @@
+@import url("style.css");
+
+/* Estilos para el menú */
+section.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    transition: background-color 0.4s, box-shadow 0.4s;
+}
+
+/* Estilos para el menú con sombra */
+section.menu.shadow {
+    background-color: var(--color-fondo); /* Color de fondo con sombra *//* Sombra con altura ajustada a 300px */
+}
+
+.menu__header {
+    display: flex;
+    align-items: center;
+    /* Alinear verticalmente los elementos dentro de .menu__header */
+    gap: 5px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 25px;
+}
+
+.menu__list li:hover{
+    background-color: var(--color-second);
+    transition: 0.3s;
+    padding: 6px;
+    border-radius: 12px;
+}
